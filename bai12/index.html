@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển</title>
+</head>
+<body>
+    <form style="margin-left: 600px;">
+        <font style="font-size: 30px;color: green;">Phiếu đăng ký tham gia chương trình khuyến mãi</font> 
+        <table border="1" style="background-color: #91f6ec;color: green;">
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phái</td>
+                <td><input type="radio" value="Nam"> Nam
+                    <input type="radio" value="Nữ"> Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Nghề nghiệp</td>
+                <td>
+                    <select>
+                        <option>Gíao viên</option>
+                        <option>Bác sỹ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Chọn sản phẩm tham gia</td>
+                <td>
+                    <select>
+                        <option>Kem đánh răng</option>
+                        <option>Bột giặt</option>
+                        <option>Dầu gội đầu</option>
+                        <option>Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Số người tham gia</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td style="border: none;"><input id="btn" type="button" value="Đồng ý"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="border: none;"><div style="color: hotpink;" id=label></div></td>
+            </tr>
+            <script>
+                document.getElementById("btn").onclick=function(){
+                    var showLabel=document.getElementById("label");
+                    showLabel.innerText="Chúc mừng bạn đã đăng ký thành công!";
+                }
+            </script>
+        </table>
+    </form>
+</body>
+</html>

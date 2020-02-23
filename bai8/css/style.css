@@ -1,0 +1,29 @@
+body{
+    background-color: #ffdeca;
+}
+img{
+    width: 200px;
+    display: inline-block;
+    float: left;
+}
+table{
+  margin-left: 500px;
+    width: 500px;
+ 
+}
+h1{
+ 
+    text-align: center;
+    color: #cc6600;
+}
+
+td:first-child {
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: #ffffff;
+}
+th{
+    background-color: #cc6600;
+    color: #ffffff;
+}

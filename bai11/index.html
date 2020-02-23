@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tạo form và các điều khiển trên form</title>
+</head>
+<body>
+    <form style="margin-left: 600px;margin-top: 100px;">
+        <table border="1" style="background-color: #5bf5f3;">
+            <font style="color: red;font-size: 20px;margin-left: 100px;">Đăng nhập</font>
+            <tr>
+                <td>Mã người dùng:</td>
+                <td><input type="text" id="username"></td>
+            </tr>
+            <tr>
+                <td>Mật khẩu:</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td style="border: none;"><input type="button" value="Đồng ý" onclick="gettxt()"/></td>
+              
+            </tr>
+            <tr>  <td style="border: none;"><div id=label></div></td></tr>
+            <script>
+                function gettxt(){
+                    var s=document.getElementById("username").value;
+                    var content=s;
+                    var showLabel=document.getElementById("label");
+                    showLabel.innerText=content;
+                }
+            </script>
+        </table>
+    </form>
+</body>
+</html>
