@@ -1,0 +1,8 @@
+#id img {
+    position: relative;
+    z-index: -1;
+}
+p{
+    position: absolute;
+    padding-left: 200px;
+}
